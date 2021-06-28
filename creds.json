@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "third-arcadia-293114",
+  "private_key_id": "ba1863e4255354743683a3b1479a7049b775851f",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEuwIBADANBgkqhkiG9w0BAQEFAASCBKUwggShAgEAAoIBAQCMOJFVSc513N3M\nA/OOKeVFguEp6dpOuugTdR08mQriSQF+aaCPpEvhG/zofL0DvdAKMfKOSuhMPPlK\niG7e6QPNxZvgQFcvV5HvuG1SNNdLPlIGVxa0xGJjEmzItgMEMsknPQaFTV3pwA8g\nzmwyk8Bo0a9Fh6zJmmY8zrASq/+F3Nyf0v6HK0zfHbDp9Rd+dki9+z2GXxLkDP5H\n02gE5LIY47Mw9rECNhLpLCL4HlrvJE6aUNLBG3pHmXEZK+JVjSAGXwKW1x92QNrH\nlojspTT34BpPb1nm7q5OntOBLaekpWNHuqV4fWm10YQta71A/o7nC4ekAU4a+GMO\nH61/XmspAgMBAAECgf8BCT9N8PdGp65ZwGDsWM2SgJYlFN/04+hob5lfLHWIITDo\nCOQLGpzBueAEivh8tx+uJs4y9nASDxR7shu5OOGylJ72gtiIep9OxinVb4pBUwN/\nndQPQeQ8fZMpzuo7DsclNCWz68s7MRRjASN6d+4YT6eK1ZXRRWpEhH4zPriEpLHR\ntbbRp83JKZU+EwOwrkqt/0En0cotPJ8hzrnbg68sgBBs5e+2987JbLIzdJCFjeSA\nxPV+nduBgl/vOB2q3WjA5Pnz//95okEq5hG7qMC5lDuvGs8Bjus8w1d+fKNwv0qy\ntOdnmcW8pk98xLy+VLI7T6fbIfTCbhXiprNy7eECgYEAwsAxSbYjslVcTmlqu0va\nfi4ahF3qTI1FB+KldXo2R5SVFTHQuXON3nlgPYNVgPWdHd/2xnK31YOez/W+jtu8\nRXDG2ImxMi7dOAFsygiS0raGyOJjUkTIub6pEXef1hqJebOKcoB8WlOOLxBs2AgZ\ncgEtH+tjUN3O/dZZIgNxnGECgYEAuFIQOoGv7yw0IY44OqrLWp7tAzvDOeJpdYi1\nUF7e5eiEHnmHndh+0auzJIfDXaXI7BQUw14Y74gzYbSZQz1DqdwmurvDqrmBczjA\nY8HFWkGMGqg0f/fTobMbivBAHMoTCus8VYV6ksFkY0YuTrylGPJncc5/CHQLoAkW\nNcJFg8kCgYAzyU2R70gQvNgd1bRW97WzBelxN1P9ZTdtAFzFH2ldoWn/R87b8ZlR\nBm+MC+dpsmZEMnD5ljnCIgzR+ePhMxceU/3cSMkAsiuLH/3gv2TjeTvgISsODlJd\n6hAlH+01zrqtzQtMpVPr5PoTE8gNriGuChgIu9wd/c1z/FKZU9cbIQKBgDwwiB4i\n5WnL3IYspA38YgWIqksJA/puBhQcfWDuaglXwXUWKIQSA2/CivBd6R02mwMEl7co\njioCJw075WSAqAza2EbYM9AXXb9bg+/Pgfu0NeUqkmJLcm92RoM7ayQ7lLZXFM+0\nk89Cmd6VN1/82EjqN3+BeBgxlO5AqWEKvJqJAoGBAJMkpGEFrLAGe4L/fTEg0wIV\nFIfBqIpmwlGnYqSN2DGpVONF5+Ukekk7M8vbi1iIYBGrSAhXg8sc6thNCnBILgrL\n/DsFYWRN/Ix/vj8rg8y6m6laqUUEDvr2yvTP8vdHmxVBItrc9WeVP8HbwCsiJZcU\n+bq1IirLnHFD/705AXe5\n-----END PRIVATE KEY-----\n",
+  "client_email": "account@third-arcadia-293114.iam.gserviceaccount.com",
+  "client_id": "116928051502598243053",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/account%40third-arcadia-293114.iam.gserviceaccount.com"
+}

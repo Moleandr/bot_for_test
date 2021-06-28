@@ -1,0 +1,58 @@
+[2021-06-28 16:28:53,659] (E:asyncio) Task exception was never retrieved
+future: <Task finished name='Task-63' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\8523~1\AppData\Local\pypoetry\Cache\virtualenvs\бот-обучение-нейросети-ZPkFq4qh-py3.8\lib\site-packages\aiogram\dispatcher\dispatcher.py:409> exception=BadRequest('There is no caption in the message to edit')>
+Traceback (most recent call last):
+  File "C:\Users\8523~1\AppData\Local\pypoetry\Cache\virtualenvs\бот-обучение-нейросети-ZPkFq4qh-py3.8\lib\site-packages\aiogram\bot\api.py", line 139, in make_request
+    async with session.post(url, data=req, **kwargs) as response:
+  File "C:\Users\8523~1\AppData\Local\pypoetry\Cache\virtualenvs\бот-обучение-нейросети-ZPkFq4qh-py3.8\lib\site-packages\aiohttp\client.py", line 1117, in __aenter__
+    self._resp = await self._coro
+  File "C:\Users\8523~1\AppData\Local\pypoetry\Cache\virtualenvs\бот-обучение-нейросети-ZPkFq4qh-py3.8\lib\site-packages\aiohttp\client.py", line 544, in _request
+    await resp.start(conn)
+  File "C:\Users\8523~1\AppData\Local\pypoetry\Cache\virtualenvs\бот-обучение-нейросети-ZPkFq4qh-py3.8\lib\site-packages\aiohttp\client_reqrep.py", line 890, in start
+    message, payload = await self._protocol.read()  # type: ignore
+  File "C:\Users\8523~1\AppData\Local\pypoetry\Cache\virtualenvs\бот-обучение-нейросети-ZPkFq4qh-py3.8\lib\site-packages\aiohttp\streams.py", line 604, in read
+    await self._waiter
+aiohttp.client_exceptions.ServerDisconnectedError: Server disconnected
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Александр\OneDrive\Програмирование\боты\Бот для нейронки\frontend\question.py", line 45, in query_q
+    await call.message.edit_text(request.caption, reply_markup=request.markup)
+  File "C:\Users\8523~1\AppData\Local\pypoetry\Cache\virtualenvs\бот-обучение-нейросети-ZPkFq4qh-py3.8\lib\site-packages\aiogram\types\message.py", line 2614, in edit_text
+    return await self.bot.edit_message_text(
+  File "C:\Users\8523~1\AppData\Local\pypoetry\Cache\virtualenvs\бот-обучение-нейросети-ZPkFq4qh-py3.8\lib\site-packages\aiogram\bot\bot.py", line 2327, in edit_message_text
+    result = await self.request(api.Methods.EDIT_MESSAGE_TEXT, payload)
+  File "C:\Users\8523~1\AppData\Local\pypoetry\Cache\virtualenvs\бот-обучение-нейросети-ZPkFq4qh-py3.8\lib\site-packages\aiogram\bot\base.py", line 208, in request
+    return await api.make_request(self.session, self.server, self.__token, method, data, files,
+  File "C:\Users\8523~1\AppData\Local\pypoetry\Cache\virtualenvs\бот-обучение-нейросети-ZPkFq4qh-py3.8\lib\site-packages\aiogram\bot\api.py", line 142, in make_request
+    raise exceptions.NetworkError(f"aiohttp client throws an error: {e.__class__.__name__}: {e}")
+aiogram.utils.exceptions.NetworkError: Aiohttp client throws an error: ServerDisconnectedError: Server disconnected
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\8523~1\AppData\Local\pypoetry\Cache\virtualenvs\бот-обучение-нейросети-ZPkFq4qh-py3.8\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 417, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\8523~1\AppData\Local\pypoetry\Cache\virtualenvs\бот-обучение-нейросети-ZPkFq4qh-py3.8\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 238, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\8523~1\AppData\Local\pypoetry\Cache\virtualenvs\бот-обучение-нейросети-ZPkFq4qh-py3.8\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\8523~1\AppData\Local\pypoetry\Cache\virtualenvs\бот-обучение-нейросети-ZPkFq4qh-py3.8\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 286, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+  File "C:\Users\8523~1\AppData\Local\pypoetry\Cache\virtualenvs\бот-обучение-нейросети-ZPkFq4qh-py3.8\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Александр\OneDrive\Програмирование\боты\Бот для нейронки\frontend\question.py", line 54, in query_q
+    await call.message.edit_caption(f'Ваша оценка: {call.data}')
+  File "C:\Users\8523~1\AppData\Local\pypoetry\Cache\virtualenvs\бот-обучение-нейросети-ZPkFq4qh-py3.8\lib\site-packages\aiogram\types\message.py", line 2655, in edit_caption
+    return await self.bot.edit_message_caption(
+  File "C:\Users\8523~1\AppData\Local\pypoetry\Cache\virtualenvs\бот-обучение-нейросети-ZPkFq4qh-py3.8\lib\site-packages\aiogram\bot\bot.py", line 2379, in edit_message_caption
+    result = await self.request(api.Methods.EDIT_MESSAGE_CAPTION, payload)
+  File "C:\Users\8523~1\AppData\Local\pypoetry\Cache\virtualenvs\бот-обучение-нейросети-ZPkFq4qh-py3.8\lib\site-packages\aiogram\bot\base.py", line 208, in request
+    return await api.make_request(self.session, self.server, self.__token, method, data, files,
+  File "C:\Users\8523~1\AppData\Local\pypoetry\Cache\virtualenvs\бот-обучение-нейросети-ZPkFq4qh-py3.8\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\8523~1\AppData\Local\pypoetry\Cache\virtualenvs\бот-обучение-нейросети-ZPkFq4qh-py3.8\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\8523~1\AppData\Local\pypoetry\Cache\virtualenvs\бот-обучение-нейросети-ZPkFq4qh-py3.8\lib\site-packages\aiogram\utils\exceptions.py", line 141, in detect
+    raise cls(description)
+aiogram.utils.exceptions.BadRequest: There is no caption in the message to edit

@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "Бот_обучение_нейросети"
+version = "0.1.0"
+description = ""
+authors = ["Moleandr <mazurenko9991@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+aiogram = "^2.13"
+emoji = "^1.2.0"
+pandas = "^1.2.5"
+google-api-python-client = "^2.10.0"
+oauth2client = "^4.1.3"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
